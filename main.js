@@ -131,4 +131,4 @@ var pollute = function(scope, react) {
   return htmlElements;
 };
 
-module.exports = pollute;
+module.exports.pullute = pollute;

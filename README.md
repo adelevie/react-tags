@@ -11,7 +11,7 @@ Synopsis:
 ```javascript
 var React = require('React');
 var SiteBoilerPlate = require('../core/SiteBoilerPlate.js'); // customize
-require('react-tags').pollute(this);  // explicitly pollute scope with tags
+require('react-tags').pollute(this, React);  // explicitly pollute scope with tags
 
 var content = function() {
   return div({}, 

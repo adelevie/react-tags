@@ -114,19 +114,19 @@ var htmlElements = [
   'wbr'
 ];
 
-var makeTag = function(name) {
+var makeTag = function(name, react) {
   return function() {
     var args, value, attributes;
     args = Array.prototype.slice.call(arguments);
     attributes = _.first(args);
     value = _.rest(args);
-    return React.DOM[name](attributes, value);
+    return react.DOM[name](attributes, value);
   };
 };
 
-var pollute = function(scope) {
+var pollute = function(scope, react) {
   _.each(htmlElements, function(e) {
-    scope[e] = makeTag(e);
+    scope[e] = makeTag(e, react);
   });
   return htmlElements;
 };

@@ -11,8 +11,5 @@
     "react"
   ],
   "author": "Alan deLevie",
-  "license": "MIT",
-  "dependencies": {
-    "underscore": "*"
-  }
+  "license": "MIT"
 }

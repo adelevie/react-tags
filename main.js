@@ -144,8 +144,7 @@ var makeTag = function(name, react) {
   return function() {
     var args, value, attributes;
     args = Array.prototype.slice.call(arguments);
-    //attributes = _.first(args);
-    attributes = args[0]
+    attributes = args[0];
     value = _.rest(args);
     return react.DOM[name](attributes, value);
   };

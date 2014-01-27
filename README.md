@@ -37,4 +37,10 @@ var hello = React.createClass({
 });
 ```
 
+Installation:
+
+```
+npm instal react-tags
+```
+
 For a non-React flavor of this library, check out [`wut`](http://github.com/adelevie/wut).

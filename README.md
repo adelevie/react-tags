@@ -36,3 +36,5 @@ var hello = React.createClass({
   }
 });
 ```
+
+For a non-React flavor of this library, check out [`wut`](http://github.com/adelevie/wut).
